@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         display: ['Sora', 'sans-serif'],
         body: ['Plus Jakarta Sans', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        caveat: ['Caveat', 'cursive'],
       },
       colors: {
         navy: {

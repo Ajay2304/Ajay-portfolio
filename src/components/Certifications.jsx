@@ -9,16 +9,23 @@ const certs = [
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 relative">
-      {/* Background */}
-      <div className="absolute top-0 left-1/4 w-72 h-72 rounded-full opacity-15 pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(0,163,255,0.08) 0%, transparent 70%)' }} />
-
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="certifications" className="relative overflow-hidden py-16 font-inter text-slate-200 px-6 lg:px-16">
+      <div className="relative max-w-7xl mx-auto z-10">
         <FadeIn className="text-center mb-14">
-          <p className="section-tag justify-center">Credentials</p>
-          <h2 className="section-title">Certifications</h2>
-          <p className="text-slate-500 mt-4 max-w-md mx-auto text-[15px]">
+          <div className="flex items-center justify-center gap-4 mb-2">
+            <span className="h-px w-10 bg-sky-500" />
+            <span className="font-inter text-sm font-medium uppercase tracking-[0.3em] text-sky-500">
+              Credentials
+            </span>
+            <span className="h-px w-10 bg-sky-500" />
+          </div>
+          <h2 className="font-outfit text-4xl sm:text-5xl font-extrabold text-white">
+            Professional{' '}
+            <span className="bg-gradient-to-r from-blue-500 to-sky-400 bg-clip-text text-transparent">
+              Certifications
+            </span>
+          </h2>
+          <p className="text-slate-400 mt-4 max-w-md mx-auto text-sm sm:text-base font-inter">
             Professional certifications validating expertise in AI, cloud, and data science.
           </p>
         </FadeIn>
@@ -35,8 +42,8 @@ export default function Certifications() {
                 {c.icon}
               </div>
               <div>
-                <p className="text-sm font-bold text-white group-hover:text-electric transition-colors duration-300">{c.name}</p>
-                <p className="text-xs text-slate-600 mt-0.5">{c.issuer} · {c.date}</p>
+                <p className="text-sm font-bold text-white group-hover:text-electric transition-colors duration-300 font-outfit">{c.name}</p>
+                <p className="text-xs text-slate-400 mt-0.5 font-inter">{c.issuer} · {c.date}</p>
               </div>
               {/* Verified badge */}
               <div className="ml-2 w-5 h-5 rounded-full bg-electric/10 border border-electric/20 flex items-center justify-center">

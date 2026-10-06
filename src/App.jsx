@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-navy-900">
+    <div className="relative min-h-screen bg-[#02040a]">
       {/* Global grid background */}
       <div className="fixed inset-0 grid-bg opacity-100 pointer-events-none z-0" />
       {/* Global spotlight */}
